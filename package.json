@@ -12,8 +12,8 @@
     "lighthouse": "^1.5.1",
     "surge": "^0.18.0"
 },
-"scripts": {
+  "scripts": {
     "lighthouse": "node lighthouse.js",
-    "publish": "./node_modules/.bin/surge ."
-}
+    "publish": "./node_modules/.bin/surge ./dist"
+  }
 }
