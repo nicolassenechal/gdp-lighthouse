@@ -7,8 +7,11 @@ notifications:
 node_js:
   - '6'
 before_install:
-  - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
+  - export LIGHTHOUSE_CHROMIUM_PATH="$(pwd)/chrome-linux/chrome"
+  - ./node_modules/lighthouse/lighthouse-core/scripts/download-chrome.sh
+  - start-stop-daemon --start --background --exec $(pwd)/chrome-linux/chrome
+  - sleep 5
   - sh -e /etc/init.d/xvfb start
 before_script:
   - npm prune
