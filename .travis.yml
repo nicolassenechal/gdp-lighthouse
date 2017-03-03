@@ -1,0 +1,14 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '6'
+before_script:
+  - npm prune
+script:
+  - npm run lighthouse
+after_script:
+  - npm run publish
