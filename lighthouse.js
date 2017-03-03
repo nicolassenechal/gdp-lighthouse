@@ -25,7 +25,7 @@ function launchChromeAndRunLighthouse(url, flags, config) {
 // Use an existing config or create a custom one.
 const config = require('lighthouse/lighthouse-core/config/perf.json');
 const url = 'https://seek.com.au/career-guide/355-project-manager-information-n-communication-technology/';
-const flags = {'output-path': './dist/lighthouse-results.html', output: 'html'};
+const flags = {'output-path': './index.html', output: 'html'};
 //{'save-artifacts': true}//{output: 'html', 'output-path': './dist/lighthouse-results.html'};
 
 
