@@ -1,0 +1,19 @@
+{
+  "name": "gdp-lighthouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lighthouse": "^1.5.1",
+    "surge": "^0.18.0"
+},
+"scripts": {
+    "lighthouse": "node lighthouse.js",
+    "publish": "./node_modules/.bin/surge"
+}
+}
