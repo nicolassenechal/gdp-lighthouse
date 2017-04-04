@@ -6,11 +6,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lighthouse": "1.5.1",
+    "lighthouse": "1.6.3",
     "surge": "^0.18.0"
 },
   "scripts": {
     "lighthouse": "node lighthouse.js",
+    "test": "node lighthouse.js",
     "publish": "./node_modules/.bin/surge --project ./dist  --domain gdp-test.surge.sh"
   }
 }
