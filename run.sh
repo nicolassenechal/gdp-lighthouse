@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./node_modules/.bin/lighthouse http://github.com --output html --output json
-./node_modules/.bin/surge --project /var/app/current/report.html --domain gdp-test.surge.sh
+./node_modules/.bin/lighthouse $URL --output html --output json --output-path site
+./node_modules/.bin/surge --project site.report.html --domain $BUILD.surge.sh
