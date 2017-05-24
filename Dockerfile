@@ -8,4 +8,4 @@ RUN chmod -R 777 node_modules
 RUN chmod -R 777 run.sh
 RUN export LIGHTHOUSE_CHROMIUM_PATH="$(pwd)/chrome-linux/chrome"
 
-CMD ./run.sh
+CMD /bin/bash
